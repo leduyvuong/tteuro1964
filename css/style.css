@@ -1,0 +1,266 @@
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
+
+.button-circle {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+
+.imagew100 {
+  width: 100%;
+}
+
+.heading_hotdeal {
+  display: block;
+  position: relative;
+}
+
+.dropdown-toggle:after {
+  content: none;
+}
+
+.nav-item {
+  margin-right: 10px;
+  padding: 6px 10px 6px 10px;
+}
+
+.header-dropdown {
+  width: 1000px;
+  padding: 20px 20px 20px 20px;
+}
+
+.header-dropdown li {
+  display: block;
+  position: relative;
+  float: left;
+  width: 33%;
+}
+
+.header-dropdown li a {
+  font-weight: bold;
+}
+
+.nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+.nav-item:hover {
+  background: #3963a9;
+}
+
+.heading_hotdeal div.h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 15px;
+  color: #3963a9;
+}
+
+.title-head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #363636;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 17px;
+  margin-top: 9px;
+}
+
+.heading_hotdeal:before {
+  content: "";
+  background: url(../img/flag1.png);
+  position: absolute;
+  width: 52px;
+  height: 30px;
+  top: 0px;
+  left: 36.3%;
+ 
+}
+
+.heading_hotdeal:after {
+  content: "";
+  background: url(../img/flag1.png);
+  position: absolute;
+  width: 52px;
+  height: 30px;
+  top: 0px;
+  right: 36.3%;
+  transform: rotate(180deg);
+}
+
+.boxaccordion {
+  display: none;
+}
+
+.service_item_ed {
+  height: 110px;
+  padding: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.service_item_ed .iconx {
+  display: inline-block;
+  width: 65px;
+  float: left;
+}
+
+.service_item_ed .content_srv {
+  width: calc(100% - 65px);
+  -o-width: calc(100% - 65px);
+  -moz-width: calc(100% - 65px);
+  -webkit-width: calc(100% - 65px);
+  display: inline-block;
+  float: left;
+  margin-left: 15px;
+}
+
+.service_item_ed .content_srv .title_service {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #3963a9;
+}
+
+.service_item_ed .content_srv .sum_service {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 5px;
+  color: #888888;
+}
+
+.color_main {
+  color: #f26522;
+}
+
+@media only screen and (max-width: 1200px) {
+  .heading_hotdeal:before {
+    left: 30.3%;
+  }
+  
+  .heading_hotdeal:after {
+    right: 30.3%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .heading_hotdeal:before {
+    left: 15.3%;
+   
+  }
+  
+  .heading_hotdeal:after {
+    right: 15.3%;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .dropdown-top {
+    display: none;
+  }
+
+  .boxaccordion {
+    display: block;
+  }
+
+  .navbar-nav li {
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-nav li:last-child {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading_hotdeal:before {
+    left: 7.3%;
+  }
+  
+  .heading_hotdeal:after {
+    right: 7.3%;
+  }
+}
+
+.containerwidth {
+  width: 100%;
+}
+
+.toggle {
+  width: 100%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white !important;
+  padding: 0 !important
+}
+
+.content ul {
+  list-style: none;
+  color: white !important;
+  padding: 0 !important;
+  text-transform: none;
+}
+
+.content ul li {
+  border-bottom: 1px solid white;
+}
+
+.content ul li:last-child {
+  border-bottom: none;
+}
+
+
+.content {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
