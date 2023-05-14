@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>Product Detail</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -20,74 +20,247 @@
     <header>
         <!-- Jumbotron -->
         <div class="p-3 text-center bg-white border-bottom">
-            <div class="container">
-                <div class="row gy-3">
-                    <!-- Left elements -->
-                    <div class="col-lg-2 col-sm-4 col-4">
-                        <a href="https://mdbootstrap.com/" target="_blank" class="float-start">
-                            <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
-                        </a>
-                    </div>
-                    <!-- Left elements -->
-
-                    <!-- Center elements -->
-                    <div class="order-lg-last col-lg-5 col-sm-8 col-8">
-                        <div class="d-flex float-end">
-                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
-                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"
-                                target="_blank"> <i class="fas fa-user-alt m-1 me-md-2"></i>
-                                <p class="d-none d-md-block mb-0">Sign in</p>
-                            </a>
-                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
-                                class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"
-                                target="_blank"> <i class="fas fa-heart m-1 me-md-2"></i>
-                                <p class="d-none d-md-block mb-0">Wishlist</p>
-                            </a>
-                            <a href="https://github.com/mdbootstrap/bootstrap-material-design"
-                                class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
-                                    class="fas fa-shopping-cart m-1 me-md-2"></i>
-                                <p class="d-none d-md-block mb-0">My cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Center elements -->
-
-                    <!-- Right elements -->
-                    <div class="col-lg-5 col-md-12 col-12">
-                        <div class="input-group float-center">
-                            <div class="form-outline">
-                                <input type="search" id="form1" class="form-control" />
-                                <label class="form-label" for="form1">Search</label>
-                            </div>
-                            <button type="button" class="btn btn-primary shadow-0">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Right elements -->
+          <div class="container">
+            <div class="row gy-3">
+              <!-- Left elements -->
+              <div class="col-lg-2 col-sm-4 col-4">
+                <a href="index.html" target="_blank" class="float-start">
+                  <img src="img/logo.png" height="45" />
+                </a>
+              </div>
+              <!-- Left elements -->
+    
+              <!-- Center elements -->
+              <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+                <div class="d-flex float-end">
+                  <a href="sign_in.html" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
+                      class="fas fa-user-alt m-1 me-md-2"></i>
+                    <p class="d-none d-md-block mb-0">Sign in</p>
+                  </a>
+                  <a href="cart.html" class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank">
+                    <i class="fas fa-shopping-cart m-1 me-md-2"></i>
+                    <p class="d-none d-md-block mb-0">My cart</p>
+                  </a>
                 </div>
+              </div>
+              <!-- Center elements -->
+    
+              <!-- Right elements -->
+              <div class="col-lg-5 col-md-12 col-12">
+                <div class="input-group float-center">
+                  <div class="form-outline">
+                    <input type="search" id="form1" class="form-control" />
+                    <label class="form-label" for="form1">Search</label>
+                  </div>
+                  <button type="button" class="btn btn-primary shadow-0">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Right elements -->
             </div>
+          </div>
         </div>
         <!-- Jumbotron -->
-
-        <!-- Heading -->
-        <div class="bg-primary">
-            <div class="container py-4">
-                <!-- Breadcrumb -->
-                <nav class="d-flex">
-                    <h6 class="mb-0">
-                        <a href="" class="text-white-50">Home</a>
-                        <span class="text-white-50 mx-2"> > </span>
-                        <a href="" class="text-white-50">Library</a>
-                        <span class="text-white-50 mx-2"> > </span>
-                        <a href="" class="text-white"><u>Data</u></a>
-                    </h6>
-                </nav>
-                <!-- Breadcrumb -->
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-top" style="background-color: #6599cd;">
+          <!-- Container wrapper -->
+          <div class="container justify-content-center justify-content-md-between">
+            <!-- Toggle button -->
+            <button class="navbar-toggler border text-dark py-2" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+              <!-- Left links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown dropdown-top">
+                  <a class="nav-link dropdown-toggle text-white mb-0" href="categories.html" id="navbarDropdown" role="button"
+                    data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                    Termékek
+                  </a>
+                  <!-- Dropdown menu -->
+                  <ul class="dropdown-menu header-dropdown" aria-labelledby="navbarDropdown"
+                    style="padding: 20px 20px 20px 20px">
+                    <li>
+                      <a class="dropdown-item" href="categories.html">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item drop-tabs">
+                  <div class="boxaccordion">
+                    <div class="containerwidth">
+                      <div class="wrapper">
+                        <button class="toggle">Termékek<i class="fas fa-plus icon"></i></button>
+                        <div class="nav-link content">
+                          <ul class="" aria-labelledby="navbarDropdown">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="about.html">Cégünkről</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="term.html">ÁFSZ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Szállítási feltételek</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact.html">Elérhetőségeink</a>
+                </li>
+              </ul>
+              <!-- Left links -->
             </div>
-        </div>
-        <!-- Heading -->
-    </header>
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+    
+        <!-- Navbar -->
+      </header>
 
     <!-- content -->
     <section class="py-5">
@@ -191,147 +364,125 @@
     </section>
     <!-- content -->
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-muted bg-primary mt-3">
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          <div class="container">
+            <div class="row d-flex">
+              <div class="col-md-3 col-sm-12">
+                <div class="service_item_ed">
+                  <span class="iconx">
+                    <img src="img/1.svg" alt="" srcset="" width="100%">
+                  </span>
+                  <div class="content_srv text-center-sm">
+                    <span class="title_service">Gyors szállítás</b>
+                      <span class="sum_service">Kiszállítás magyarországi üzletünkből</b>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="service_item_ed">
+                  <span class="iconx">
+                    <img src="img/2.svg" alt="" srcset="" width="100%">
+                  </span>
+                  <div class="content_srv text-center-sm">
+                    <span class="title_service">Folyamatos akciók</b>
+                      <span class="sum_service">Nagyszerű termékajánlatok, promóciók</b>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="service_item_ed">
+                  <span class="iconx">
+                    <img src="img/3.svg" alt="" srcset="" width="100%">
+                  </span>
+                  <div class="content_srv text-center-sm">
+                    <span class="title_service">Egyszerű vásárlás</b>
+                      <span class="sum_service">Fizessen egyszerűen online vagy a futárnak</b>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="service_item_ed">
+                  <span class="iconx">
+                    <img src="img/4.svg" alt="" srcset="" width="100%">
+                  </span>
+                  <div class="content_srv text-center-sm">
+                    <span class="title_service">Minőségi termékek</b>
+                      <span class="sum_service">Ügyelünk termékeink kiváló minőségére</b>
+                  </div>
+                </div>
+              </div>
+              <!-- Right -->
+            </div>
+          </div>
+        </section>
+        <!-- Section: Social media -->
+    
         <!-- Section: Links  -->
         <section class="">
-            <div class="container text-center text-md-start pt-4 pb-4">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-12 col-lg-3 col-sm-12 mb-2">
-                        <!-- Content -->
-                        <a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
-                            MDB
-                        </a>
-                        <p class="mt-1 text-white">
-                            © 2023 Copyright: MDBootstrap.com
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <!-- Links -->
-                        <h6 class="text-uppercase text-white fw-bold mb-2">
-                            Store
-                        </h6>
-                        <ul class="list-unstyled mb-4">
-                            <li><a class="text-white-50" href="#">About us</a></li>
-                            <li><a class="text-white-50" href="#">Find store</a></li>
-                            <li><a class="text-white-50" href="#">Categories</a></li>
-                            <li><a class="text-white-50" href="#">Blogs</a></li>
-                        </ul>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <!-- Links -->
-                        <h6 class="text-uppercase text-white fw-bold mb-2">
-                            Information
-                        </h6>
-                        <ul class="list-unstyled mb-4">
-                            <li><a class="text-white-50" href="#">Help center</a></li>
-                            <li><a class="text-white-50" href="#">Money refund</a></li>
-                            <li><a class="text-white-50" href="#">Shipping info</a></li>
-                            <li><a class="text-white-50" href="#">Refunds</a></li>
-                        </ul>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <!-- Links -->
-                        <h6 class="text-uppercase text-white fw-bold mb-2">
-                            Support
-                        </h6>
-                        <ul class="list-unstyled mb-4">
-                            <li><a class="text-white-50" href="#">Help center</a></li>
-                            <li><a class="text-white-50" href="#">Documents</a></li>
-                            <li><a class="text-white-50" href="#">Account restore</a></li>
-                            <li><a class="text-white-50" href="#">My orders</a></li>
-                        </ul>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-12 col-sm-12 col-lg-3">
-                        <!-- Links -->
-                        <h6 class="text-uppercase text-white fw-bold mb-2">Newsletter</h6>
-                        <p class="text-white">Stay in touch with latest updates about our products and offers</p>
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control border" placeholder="Email" aria-label="Email"
-                                aria-describedby="button-addon2" />
-                            <button class="btn btn-light border shadow-0" type="button" id="button-addon2"
-                                data-mdb-ripple-color="dark">
-                                Join
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
+          <div class="container text-center text-md-start mt-5 mb-4">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-12 col-lg-3 col-sm-12">
+                <!-- Content -->
+                <a href="https://mdbootstrap.com/" target="_blank" class="ms-md-2">
+                  <img src="img/logo.png" height="80" />
+                </a>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-6 col-sm-4 col-lg-4">
+                <!-- Links -->
+                <ul class="list-unstyled mb-4">
+                  <li>Elérhetőségek</li>
+                  <li>1089. Budapest Golgota u.4. 228. épület</li>
+                  <li>Tel: 06 30/294 0508</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 30/4274 574</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 30/6497 013</li>
+                  <li> Email: vanthinh1964@gmail.com</li>
+                </ul>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-2">
+                <!-- Links -->
+                <h6 class="text-uppercase text-dark fw-bold mb-3">
+                  Gyorsmenü
+                </h6>
+                <ul class="list-unstyled mb-4">
+                  <li><a class="text-muted" href="#">Főoldal</a></li>
+                  <li><a class="text-muted" href="#">Cégünkről</a></li>
+                  <li><a class="text-muted" href="#">ÁFSZ</a></li>
+                  <li><a class="text-muted" href="#">Elérhetőségeink</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-3">
+                <div class="fb-page" data-href="https://www.facebook.com/Mystery-Minds-News-117535884665946/"
+                  data-tabs="timeline" data-width="" data-height="" data-hide-cta="false" data-small-header="false"
+                  data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                  <blockquote cite="https://www.facebook.com/Mystery-Minds-News-117535884665946/"
+                    class="fb-xfbml-parse-ignore"><a
+                      href="https://www.facebook.com/Mystery-Minds-News-117535884665946/">Mystery Minds News</a>
+                  </blockquote>
                 </div>
-                <!-- Grid row -->
+              </div>
             </div>
+            <!-- Grid row -->
+          </div>
         </section>
-        <!-- Section: Links  -->
-
-        <div class="">
-            <div class="container">
-                <div class="d-flex justify-content-between py-4 border-top">
-                    <!--- payment --->
-                    <div>
-                        <i class="fab fa-lg fa-cc-visa text-white"></i>
-                        <i class="fab fa-lg fa-cc-amex text-white"></i>
-                        <i class="fab fa-lg fa-cc-mastercard text-white"></i>
-                        <i class="fab fa-lg fa-cc-paypal text-white"></i>
-                    </div>
-                    <!--- payment --->
-
-                    <!--- language selector --->
-                    <div class="dropdown dropup">
-                        <a class="dropdown-toggle text-white" href="#" id="Dropdown" role="button"
-                            data-mdb-toggle="dropdown" aria-expanded="false"> <i
-                                class="flag-united-kingdom flag m-0 me-1"></i>English </a>
-
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Dropdown">
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English <i
-                                        class="fa fa-check text-success ms-2"></i></a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--- language selector --->
-                </div>
+        <div class="container">
+          <div class="py-4 border-top">
+            <div class="d-flex justify-content-between">
+              <!--- payment --->
+              <div class="text-dark">
+                <span>2023 © TTEURO KFT, minden jog fenntartva.</span>
+              </div>
+              <!--- payment --->
             </div>
+          </div>
         </div>
-    </footer>
+      </footer>
     <!-- Footer -->
 
 
