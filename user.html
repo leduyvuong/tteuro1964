@@ -1,320 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="img/ms-icon-144x144.png">
 </head>
+
 <body>
-    <header>
-        <!-- Jumbotron -->
-        <div class="p-3 text-center bg-white border-bottom">
-          <div class="container">
-            <div class="row gy-3">
-              <!-- Left elements -->
-              <div class="col-lg-2 col-sm-4 col-4">
-                <a href="index.html" target="_blank" class="float-start">
-                  <img src="img/logo.png" height="45" />
-                </a>
-              </div>
-              <!-- Left elements -->
-    
-              <!-- Center elements -->
-              <div class="order-lg-last col-lg-5 col-sm-8 col-8">
-                <div class="d-flex float-end">
-                  <a href="#"
-                    class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
-                      class="fas fa-user-alt m-1 me-md-2"></i>
-                    <p class="d-none d-md-block mb-0">Sign in</p>
-                  </a>
-                  <a href="cart.html"
-                    class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i
-                      class="fas fa-shopping-cart m-1 me-md-2"></i>
-                    <p class="d-none d-md-block mb-0">My cart</p>
-                  </a>
-                </div>
-              </div>
-              <!-- Center elements -->
-    
-              <!-- Right elements -->
-              <div class="col-lg-5 col-md-12 col-12">
-                <div class="input-group float-center">
-                  <div class="form-outline">
-                    <input type="search" id="form1" class="form-control" />
-                    <label class="form-label" for="form1">Search</label>
-                  </div>
-                  <button type="button" class="btn btn-primary shadow-0">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- Right elements -->
+  <header>
+    <!-- Jumbotron -->
+    <div class="p-3 text-center bg-white border-bottom">
+      <div class="container">
+        <div class="row gy-3">
+          <!-- Left elements -->
+          <div class="col-lg-3 col-sm-4 col-4">
+            <a href="index.html" target="_blank" class="float-start">
+              <img src="img/logo.png" height="55" />
+            </a>
+          </div>
+          <!-- Left elements -->
+
+          <!-- Center elements -->
+          <div class="order-lg-last col-lg-5 col-sm-8 col-8 mt-4 icon-top">
+            <div class="d-flex float-end">
+              <a href="tel:06302940508" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"
+                target="_blank"> <i class="fas fa-phone m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">Phone</p>
+              </a>
+              <a href="sign_in.html" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center"
+                target="_blank"> <i class="fas fa-user-alt m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">Sign in</p>
+              </a>
+
+              <a href="cart.html" class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank">
+                <i class="fas fa-shopping-cart m-1 me-md-2"></i>
+                <p class="d-none d-md-block mb-0">My cart <span class="badge bg-danger pt-1" style="font-size: 12px;background-color: #dd4b39;">12</span></p>
+              </a>
             </div>
           </div>
+          <!-- Center elements -->
+
+          <!-- Right elements -->
+          <div class="col-lg-4 col-md-12 col-12 mt-4">
+            <div class="input-group float-center">
+              <div class="form-outline">
+                <input type="search" id="form1" class="form-control" />
+                <label class="form-label" for="form1">Search</label>
+              </div>
+              <button type="button" class="btn btn-primary shadow-0">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Right elements -->
         </div>
-        <!-- Jumbotron -->
-    
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-top" style="background-color: #6599cd;">
-          <!-- Container wrapper -->
-          <div class="container justify-content-center justify-content-md-between">
-            <!-- Toggle button -->
-            <button class="navbar-toggler border text-dark py-2" type="button" data-mdb-toggle="collapse"
-              data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <i class="fas fa-bars"></i>
-            </button>
-    
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
-              <!-- Left links -->
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown dropdown-top">
-                  <a class="nav-link dropdown-toggle text-white mb-0" href="#" id="navbarDropdown" role="button"
-                    data-mdb-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-bars"></i>
-                    Termékek
-                  </a>
-                  <!-- Dropdown menu -->
-                  <ul class="dropdown-menu header-dropdown" aria-labelledby="navbarDropdown" style="padding: 20px 20px 20px 20px">
-                    <li>
-                      <a class="dropdown-item" href="categories.html">Action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                  </ul>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-top" style="background-color: #6599cd;">
+      <!-- Container wrapper -->
+      <div class="container justify-content-center justify-content-md-between">
+        <!-- Toggle button -->
+        <button class="navbar-toggler border text-dark py-2" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown dropdown-top">
+              <a class="nav-link dropdown-toggle text-white mb-0" href="categories.html" id="navbarDropdown"
+                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+                Termékek
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu header-dropdown" aria-labelledby="navbarDropdown"
+                style="padding: 20px 20px 20px 20px">
+                <li>
+                  <a class="dropdown-item" href="categories.html">Új Termékek</a>
                 </li>
-                <li class="nav-item drop-tabs">
-                  <div class="boxaccordion">
-                    <div class="containerwidth">
-                        <div class="wrapper">
-                            <button class="toggle">Termékek<i class="fas fa-plus icon"></i></button>
-                            <div class="nav-link content">
-                              <ul class="" aria-labelledby="navbarDropdown">
-                                <li>
-                                  <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                </li>
-                              </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <li>
+                  <a class="dropdown-item" href="#">Kötelek</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="about.html">Cégünkről</a>
+                <li>
+                  <a class="dropdown-item" href="#">Szülinapi Parti</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="term.html">ÁFSZ</a>
+                <li>
+                  <a class="dropdown-item" href="#">Iroda és Diákeszközök</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Szállítási feltételek</a>
+                <li>
+                  <a class="dropdown-item" href="#">Táskák és pénztárcák</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="contact.html">Elérhetőségeink</a>
+                <li>
+                  <a class="dropdown-item" href="#">Kötelek</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Szemüveg és Tok</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Asztalterítők</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Golyós kerti csap és betét</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ragasztó </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Bicikli</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Állat kiegészítők</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Világító eszközök</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Háztartás</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Zár, lakat</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Szerszámok</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Szemeteszsák és Tasak</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Kertészeti Kellékek</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Szépség-egészség</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Autó és javítás</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Fürdőszoba</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Telefon kiegészitő</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Elemek</a>
                 </li>
               </ul>
-              <!-- Left links -->
-            </div>
+            </li>
+            <li class="nav-item drop-tabs">
+              <div class="boxaccordion">
+                <div class="containerwidth">
+                  <div class="wrapper">
+                    <button class="toggle">Termékek<i class="fas fa-plus icon"></i></button>
+                    <div class="nav-link content">
+                      <ul class="mt-2" aria-labelledby="navbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="categories.html">Új Termékek</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Kötelek</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Szülinapi Parti</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Iroda és Diákeszközök</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Táskák és pénztárcák</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Kötelek</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Szemüveg és Tok</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Asztalterítők</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Golyós kerti csap és betét</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Ragasztó </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Bicikli</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Állat kiegészítők</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Világító eszközök</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Háztartás</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Zár, lakat</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Szerszámok</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Szemeteszsák és Tasak</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Kertészeti Kellékek</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Szépség-egészség</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Autó és javítás</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Fürdőszoba</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Telefon kiegészitő</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Elemek</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="about.html">Cégünkről</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="term.html">ÁFSZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Szállítási feltételek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Elérhetőségeink</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <!-- Navbar -->
+  </header>
+
+  <section>
+    <div class="container text-md-start mt-5 mb-4">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-12 col-md-12 col-sm-12">
+          <div class="title_top_menu">
+            <h2>Elfelejtett jelszó</h2>
           </div>
-          <!-- Container wrapper -->
-        </nav>
-        
-        <!-- Navbar -->
-      </header>
-      
-      <!-- do that -->
-      
-      <!-- Footer -->
-      <footer class="text-center text-lg-start text-muted bg-primary mt-3">
-        <!-- Section: Links  -->
-        <section class="">
-          <div class="container text-center text-md-start pt-4 pb-4">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-12 col-lg-3 col-sm-12 mb-2">
-                <!-- Content -->
-                <a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
-                  <img src="img/logo.png" height="80" />
-                </a>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-6 col-sm-4 col-lg-4">
-                <!-- Links -->
-                <h6 class="text-uppercase text-white fw-bold mb-2">
-                    Elérhetőségek
-                </h6>
-                <ul class="list-unstyled mb-4">
-                    <li class="text-white-50">1089. Budapest Golgota u.4. 228. épület</li>
-                    <li class="text-white-50">Tel: 06 30/294 0508</li>
-                    <li class="text-white-50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 30/4274 574</li>
-                    <li class="text-white-50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 30/6497 013</li>
-                    <li class="text-white-50"> Email: vanthinh1964@gmail.com</li>
-                </ul>
-              </div>
-              <!-- Grid column -->
-      
-              <div class="col-6 col-sm-4 col-lg-2">
-                <!-- Links -->
-                <h6 class="text-uppercase text-white fw-bold mb-2">
-                    Gyorsmenü
-                </h6>
-                <ul class="list-unstyled mb-4">
-                    <li><a class="text-white-50" href="#">Főoldal</a></li>
-                    <li><a class="text-white-50" href="#">Cégünkről</a></li>
-                    <li><a class="text-white-50" href="#">ÁFSZ</a></li>
-                    <li><a class="text-white-50" href="#">Elérhetőségeink</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- Grid row -->
+          <div class="table-responsive">
+            <div class="table-responsive mb-5">
+              <table class="table align-middle mb-0 bg-white table-hover">
+                  <thead class="bg-light">
+                    <tr>
+                      <th>Name</th>
+                      <th>Title</th>
+                      <th>Status</th>
+                      <th>Position</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img
+                              src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                              alt=""
+                              style="width: 45px; height: 45px"
+                              class="rounded-circle"
+                              />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-1">John Doe</p>
+                            <p class="text-muted mb-0">john.doe@gmail.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="fw-normal mb-1">Software engineer</p>
+                        <p class="text-muted mb-0">IT department</p>
+                      </td>
+                      <td>
+                        <span class="badge badge-success rounded-pill d-inline">Active</span>
+                      </td>
+                      <td>Senior</td>
+                      <td>
+                        <button type="button" class="btn btn-link btn-sm btn-rounded">
+                          Show
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img
+                              src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                              class="rounded-circle"
+                              alt=""
+                              style="width: 45px; height: 45px"
+                              />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-1">Alex Ray</p>
+                            <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="fw-normal mb-1">Consultant</p>
+                        <p class="text-muted mb-0">Finance</p>
+                      </td>
+                      <td>
+                        <span class="badge badge-primary rounded-pill d-inline"
+                              >Onboarding</span
+                          >
+                      </td>
+                      <td>Junior</td>
+                      <td>
+                        <button
+                                type="button"
+                                class="btn btn-link btn-rounded btn-sm fw-bold"
+                                data-mdb-ripple-color="dark"
+                                >
+                          Show
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img
+                              src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                              class="rounded-circle"
+                              alt=""
+                              style="width: 45px; height: 45px"
+                              />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-1">Kate Hunington</p>
+                            <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="fw-normal mb-1">Designer</p>
+                        <p class="text-muted mb-0">UI/UX</p>
+                      </td>
+                      <td>
+                        <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+                      </td>
+                      <td>Senior</td>
+                      <td>
+                        <button
+                                type="button"
+                                class="btn btn-link btn-rounded btn-sm fw-bold"
+                                data-mdb-ripple-color="dark"
+                                >
+                          Show
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
           </div>
-        </section>
-        <!-- Section: Links  -->
-      </footer>
-      <!-- Footer -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-<!-- Custom scripts -->
-<script type="text/javascript" src="js/script.js"></script>
+          </div>
+        </div>
+      </div>
+      <!-- Grid row -->
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mt-5">
+          <div class="title_top_menu">
+            <h2>Személyes adatok</h2>
+          </div>
+          <ul class="user-info">
+            <li>Név: Dam</li>
+            <li>E-mail: damthanhbinh1009@gmail.com</li>
+            <li class="mt-3">
+              <a href="Adataim/Adatok" class="btn btn-primary btn-sm"  style="box-shadow: none !important;">Módosítás</a>
+              <a href="Adataim/Jelszo" class="btn btn-primary btn-sm ms-3"  style="box-shadow: none !important;">Jelszó módosítás</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5 text-center">
+          <div class="title_top_menu">
+            <h2>Dátum</h2>
+          </div>
+          <ul class="user-info"  style="padding: 20px 0 0 0;">
+            <li>
+              <p>2023. 05. 14</p>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5">
+          <div class="title_top_menu">
+            <h2>SZÁLLÍTÁSI ADATOK</h2>
+          </div>
+          
+
+        <ul class="user-info">
+          <li>
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+          </select>
+          </li>
+          <li class="mt-3">
+            <a href="Adataim/Adatok" class="btn btn-primary btn-sm"  style="box-shadow: none !important;">Módosítás</a>
+            <a href="Adataim/Jelszo" class="btn btn-primary btn-sm ms-3"  style="box-shadow: none !important;">Jelszó módosítás</a>
+            <a href="Adataim/Jelszo" class="btn btn-primary btn-sm ms-3"  style="box-shadow: none !important;">Jelszó módosítás</a>
+            </li>
+        </ul>
+        </div>
+
+        <div class="col-md-6 col-sm-12 mt-5">
+          <div class="title_top_menu">
+            <h2>SZÁLLÍTÁSI ADATOK</h2>
+          </div>
+          
+
+        <ul class="user-info">
+          <li>
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+          </select>
+          </li>
+          <li class="mt-3">
+            <a href="Adataim/Adatok" class="btn btn-primary btn-sm"  style="box-shadow: none !important;">Módosítás</a>
+            <a href="Adataim/Jelszo" class="btn btn-primary btn-sm ms-3"  style="box-shadow: none !important;">Jelszó módosítás</a>
+            <a href="Adataim/Jelszo" class="btn btn-primary btn-sm ms-3"  style="box-shadow: none !important;">Jelszó módosítás</a>
+            </li>
+        </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-muted bg-primary mt-3">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start pt-4 pb-4">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-12 col-lg-3 col-sm-12 mb-2">
+            <!-- Content -->
+            <a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
+              <img src="img/logo.png" height="80" />
+            </a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-6 col-sm-4 col-lg-4">
+            <!-- Links -->
+            <h6 class="text-uppercase text-white fw-bold mb-2">
+              Elérhetőségek
+            </h6>
+            <ul class="list-unstyled mb-4">
+              <li class="text-white-50">1089. Budapest Golgota u.4. 228. épület</li>
+              <li class="text-white-50">Tel: 06 30/294 0508</li>
+              <li class="text-white-50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 30/4274 574</li>
+              <li class="text-white-50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06 30/6497 013</li>
+              <li class="text-white-50"> Email: vanthinh1964@gmail.com</li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <div class="col-6 col-sm-4 col-lg-2">
+            <!-- Links -->
+            <h6 class="text-uppercase text-white fw-bold mb-2">
+              Gyorsmenü
+            </h6>
+            <ul class="list-unstyled mb-4">
+              <li><a class="text-white-50" href="#">Főoldal</a></li>
+              <li><a class="text-white-50" href="#">Cégünkről</a></li>
+              <li><a class="text-white-50" href="#">ÁFSZ</a></li>
+              <li><a class="text-white-50" href="#">Elérhetőségeink</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
