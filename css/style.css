@@ -424,10 +424,137 @@
 .button-chat-2:hover {
   cursor: pointer;
 }
+
 .button-chat-2 i {
   width: 45%;
   transition: 0.4s;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.product-bar {
+  display: block;
+  background-color:#6599cd;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.product-card {
+  border-radius: 15px;
+  padding: 35px 10px 20px 10px;
+  height: 700px;
+}
+
+.scrollit {
+  overflow:scroll;
+  height:100px;
+}
+
+table.tableSection {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table.tableSection thead,
+table.tableSection tbody {
+  width: 100%;
+}
+
+table.tableSection thead {
+  overflow-y: scroll;
+  display: table;
+  table-layout: fixed;
+  width: calc(100% - 16px); /* assuming scrollbar width as 16px */
+}
+
+table.tableSection tfoot {
+  overflow-y: scroll;
+  display: table;
+  table-layout: fixed;
+  width: calc(100% - 16px) /* assuming scrollbar width as 16px */
+}
+
+table.tableSection tbody {
+  overflow: auto;
+  height: 220px;
+  display: block;
+}
+
+table.tableSection tr {
+  width: 100%;
+  text-align: left;
+  display: table;
+  table-layout: fixed;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .heading_hotdeal:before {
+    left: 30.3%;
+  }
+  
+  .heading_hotdeal:after {
+    right: 30.3%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .product-bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .heading_hotdeal:before {
+    left: 15.3%;
+   
+  }
+  
+  .heading_hotdeal:after {
+    right: 15.3%;
+  }
+
+  
+}
+
+
+@media only screen and (max-width: 991px) {
+  .dropdown-top {
+    display: none;
+  }
+
+  .boxaccordion {
+    display: block;
+  }
+
+  .product-card {
+    border: none;
+    padding: 0;
+    height: auto;
+  }
+
+  .navbar-nav li {
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-nav li:last-child {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading_hotdeal:before {
+    left: 7.3%;
+  }
+  
+  .heading_hotdeal:after {
+    right: 7.3%;
+  }
+}
+
+.containerwidth {
+  width: 100%;
 }
