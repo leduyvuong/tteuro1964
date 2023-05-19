@@ -36,3 +36,5 @@ function hoverOn() {
 function hoverOut() {
     document.getElementById('sidebar-hidden').hidden = true
 }
+
+

@@ -696,7 +696,9 @@ ol {
 }
 
 .topbar {
-  margin: 10px 0;
+  padding-top: 10px;
+  background-color: #f5f5f5 !important;
+  margin-bottom: -25px;
 }
 
 .topbar .topbar_right li.login_content {
@@ -775,7 +777,7 @@ ol {
 
 #sidebar-hidden {
   position: absolute;
-  height: 600px;
+  height: auto;
   border: 1px solid black;
   left: 356px;
   top: 257px;
@@ -795,15 +797,17 @@ ol {
 }
 .slider-item-sub-item-1,
 .slider-item-sub-item-2 {
-  height: 170px;
+  height: 175px;
 }
 .slider-item-sub-item-1 img {
-  height: 165px;
-  width: 510px !important;
-  margin-bottom: 12px;
+  height: 100%;
+}
+.slider-item-sub-item {
+  padding: 0 !important;
 }
 .slider-item-sub-item-2 img {
-  height: 165px;
-  width: 510px !important;
-  margin-top: 15px;
+  height: 100%;
+}
+.slide-left {
+  padding: 0 !important;
 }
