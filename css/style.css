@@ -689,7 +689,7 @@ ul {
   list-style: none outside;
 }
 
-ul,
+.displayFlex ul,
 ol {
   margin: 0;
   padding: 0;
@@ -781,4 +781,29 @@ ol {
   top: 257px;
   z-index: 1000;
   background-color: white;
+}
+.slider-item {
+  background-color: #c9dbee;
+}
+
+.slider-item col {
+  padding: 0px;
+}
+
+.slider-item-main-item{
+  height: 350px;
+}
+.slider-item-sub-item-1,
+.slider-item-sub-item-2 {
+  height: 170px;
+}
+.slider-item-sub-item-1 img {
+  height: 165px;
+  width: 510px !important;
+  margin-bottom: 12px;
+}
+.slider-item-sub-item-2 img {
+  height: 165px;
+  width: 510px !important;
+  margin-top: 15px;
 }
