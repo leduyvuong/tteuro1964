@@ -737,3 +737,48 @@ ol {
 .displayFlex {
   display: flex;
 }
+
+.banner-left {
+  height: 500px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+
+.card-img-top {
+  border: 1px solid gray;
+}
+
+.card-product {
+  width: 20%;
+}
+
+.sidebar-product-detail .list-group-item:hover {
+  color: var(--mdb-list-group-active-color);
+  background-color: var(--mdb-list-group-active-bg);
+  border-color: var(--mdb-list-group-active-border-color);
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.drop-button::after {
+  content: '';
+}
+
+#sidebar-hidden {
+  position: absolute;
+  height: 600px;
+  border: 1px solid black;
+  left: 356px;
+  top: 257px;
+  z-index: 1000;
+  background-color: white;
+}
