@@ -88,7 +88,7 @@
   width: 52px;
   height: 30px;
   top: 0px;
-  left: 36.3%;
+  left: 32.3%;
 
 }
 
@@ -99,7 +99,7 @@
   width: 52px;
   height: 30px;
   top: 0px;
-  right: 36.3%;
+  right: 32.3%;
   transform: rotate(180deg);
 }
 
@@ -867,8 +867,9 @@ aside {
 
 .cl-menu li .slide-drop-right {
   display: flex;
-  min-width: 1300px;
+  min-width: 850px;
   z-index: 10;
+  font-size: 12px;
   background-color: #f5f5f5 !important;
   border-radius: 15px;
 }
