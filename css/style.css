@@ -161,53 +161,10 @@
   color: #f26522;
 }
 
-@media only screen and (max-width: 1200px) {
-  .heading_hotdeal:before {
-    left: 30.3%;
-  }
 
-  .heading_hotdeal:after {
-    right: 30.3%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .heading_hotdeal:before {
-    left: 15.3%;
-
-  }
-
-  .heading_hotdeal:after {
-    right: 15.3%;
-  }
-}
-
-
-@media only screen and (max-width: 991px) {
-  .dropdown-top {
-    display: none;
-  }
-
-  .boxaccordion {
-    display: block;
-  }
-
-  .navbar-nav li {
-    border-bottom: 1px solid white;
-  }
-
-  .navbar-nav li:last-child {
-    border-bottom: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .heading_hotdeal:before {
-    left: 7.3%;
-  }
-
-  .heading_hotdeal:after {
-    right: 7.3%;
+@media only screen and (max-width: 1400px) {
+  .form-outline .form-control~.form-label {
+    left: 0.5rem;
   }
 }
 
@@ -500,6 +457,14 @@ table.tableSection tr {
     left: 30.3%;
   }
 
+  #slide-categories {
+    width: 100% !important;
+    margin-left: 15px;
+  }
+
+  .icon-categories {
+    width: 10% !important;
+  }
 
   .heading_hotdeal:after {
     right: 30.3%;
@@ -507,6 +472,12 @@ table.tableSection tr {
 
   .col-lg-6 {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #menu {
+    display: none;
   }
 }
 
@@ -518,12 +489,12 @@ table.tableSection tr {
 
 @media only screen and (max-width: 1000px) {
   .heading_hotdeal:before {
-    left: 15.3%;
+    left: 25.3%;
 
   }
 
   .heading_hotdeal:after {
-    right: 15.3%;
+    right: 25.3%;
   }
 
   .hidden-lg {
@@ -571,6 +542,25 @@ table.tableSection tr {
   .heading_hotdeal:after {
     right: 7.3%;
   }
+
+  .icon-categories {
+    width: 20% !important;
+  }
+
+  #exampleModal .modal-content {
+    width: 85% !important;
+    height: 700px;
+    margin-top: 80px;
+    margin-left: 2.5rem !important;
+  }
+
+  .recipe {
+    margin-top: 0 !important;
+  }
+
+  .card-product {
+    width: 100% !important;
+  }
 }
 
 .containerwidth {
@@ -595,6 +585,11 @@ table.tableSection tr {
   align-items: center;
 }
 
+#exampleModal .modal-content {
+  height: 700px;
+  margin-top: 80px;
+}
+
 .icon_hotline {
   color: #fff;
   background-color: #f26522;
@@ -603,7 +598,7 @@ table.tableSection tr {
   border-radius: 50%;
   line-height: 38px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   float: left;
   border: 2px solid #f26522;
   display: flex;
@@ -611,9 +606,19 @@ table.tableSection tr {
   justify-content: center;
 }
 
+.icon_hotline:hover {
+  opacity: 0.5;
+}
+
+#KosarTartalom {
+  font-weight: bold;
+}
+
 .content_hotline {
   line-height: 17px;
   margin-top: 4px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .content_hotline p {
@@ -638,11 +643,13 @@ table.tableSection tr {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  font-size: 14px;
 }
 
 .icon_cart {
   color: #fff;
-  background-color: #c6e1af;
+  background-color: #8acf4f;
+  ;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -651,8 +658,13 @@ table.tableSection tr {
   font-size: 16px;
   float: left;
   display: flex;
+  opacity: 0.5;
   align-items: center;
   justify-content: center;
+}
+
+.icon_cart:hover {
+  opacity: 1;
 }
 
 .topbar .topbar_left {
@@ -826,7 +838,7 @@ ol {
 aside {
   margin-top: 10%;
   height: 50%;
-  
+
 }
 
 #menu ul {
@@ -888,7 +900,7 @@ aside {
 
 .cl-menu li:hover>ul {
   display: block;
-  
+
 }
 
 .cl-menu li ul li:last-child {
@@ -897,4 +909,68 @@ aside {
 
 .btn-product {
   background-color: #006cd9;
+}
+
+.btn-product i:hover {
+  color: black;
+}
+
+.text-giohang {
+  font-size: 14px;
+}
+
+.ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.ribbon__content {
+  padding-left: 50px;
+  left: -25px;
+  top: 30px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(47deg);
+  position: absolute;
+  display: block;
+  width: 200px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0px 10px;
+  color: black;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-transform: uppercase;
+  border: 2px dotted #fff;
+  outline: 5px solid #6599cd;
+
+
+}
+
+.ribbon::before {
+  top: 0;
+  left: 0;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #f19066;
+  box-sizing: content-box;
+
+}
+
+.ribbon::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #f19066;
+
 }

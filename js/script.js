@@ -38,3 +38,5 @@
 // }
 
 
+document.getElementById("btn-back").addEventListener("click", function() { scroll(0,0) });
+
