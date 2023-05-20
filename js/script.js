@@ -30,11 +30,11 @@
 //]]>
 
 
-function hoverOn() {
-    document.getElementById('sidebar-hidden').hidden = false
-}
-function hoverOut() {
-    document.getElementById('sidebar-hidden').hidden = true
-}
+// function hoverOn() {
+//     document.getElementById('sidebar-hidden').hidden = false
+// }
+// function hoverOut() {
+//     document.getElementById('sidebar-hidden').hidden = true
+// }
 
 
