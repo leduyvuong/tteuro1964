@@ -1156,3 +1156,15 @@ aside {
 .button_register a {
   color: #363636 !important;
 }
+
+.topbar .topbar_right li ul:before {
+  border: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+  bottom: 100%;
+  right: 104px;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
