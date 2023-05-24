@@ -66,7 +66,7 @@
 }
 
 .heading_hotdeal div.h2 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   text-align: center;
   font-size: 22px;
   font-weight: 600;
@@ -94,7 +94,6 @@
   height: 30px;
   top: 0px;
   left: 38.3%;
-
 }
 
 .heading_hotdeal:after {
@@ -166,9 +165,8 @@
   color: #f26522;
 }
 
-
 @media only screen and (max-width: 1400px) {
-  .form-outline .form-control~.form-label {
+  .form-outline .form-control ~ .form-label {
     left: 0.5rem;
   }
 }
@@ -195,7 +193,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: white !important;
-  padding: 0 !important
+  padding: 0 !important;
 }
 
 .content ul {
@@ -212,7 +210,6 @@
 .content ul li:last-child {
   border-bottom: none;
 }
-
 
 .content {
   position: relative;
@@ -249,7 +246,7 @@
 
 .title_top_menu h2 {
   color: white;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   margin: 0;
   padding: 10px 28px 10px 28px;
   font-size: 17px;
@@ -339,7 +336,7 @@
   text-transform: uppercase;
   border-radius: 50% !important;
   margin-left: 0px;
-  padding-top: 0px !important
+  padding-top: 0px !important;
 }
 
 .button-chat {
@@ -408,7 +405,7 @@
 .product-card {
   border-radius: 15px;
   padding: 35px 10px 20px 10px;
-  height: 700px;
+  height: auto;
 }
 
 .scrollit {
@@ -431,7 +428,6 @@ table.tableSection thead {
   overflow-y: scroll;
   display: table;
   table-layout: fixed;
-  width: calc(100% - 16px);
   /* assuming scrollbar width as 16px */
 }
 
@@ -439,23 +435,35 @@ table.tableSection tfoot {
   overflow-y: scroll;
   display: table;
   table-layout: fixed;
-  width: calc(100% - 16px)
-    /* assuming scrollbar width as 16px */
+  /* assuming scrollbar width as 16px */
 }
 
 table.tableSection tbody {
   overflow: auto;
-  height: 220px;
   display: block;
 }
 
 table.tableSection tr {
   width: 100%;
   text-align: center;
-  display: table;
+  display: none;
   table-layout: fixed;
 }
 
+table.tableSection tr.active {
+  display: table;
+}
+
+.hidden {
+  display: none;
+}
+
+.offer_container {
+  background-color: #f8ddd3;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #f5a98b;
+}
 
 @media only screen and (max-width: 1200px) {
   #slide-categories {
@@ -550,12 +558,12 @@ table.tableSection tr {
     margin-left: 15px;
   }
 
-  #categories  {
+  #categories {
     width: 100%;
     margin-left: 10px;
   }
 
-  #body-products  {
+  #body-products {
     width: 100%;
   }
 
@@ -581,7 +589,6 @@ table.tableSection tr {
 @media only screen and (max-width: 1000px) {
   .heading_hotdeal:before {
     left: 28.3% !important;
-
   }
 
   .heading_hotdeal:after {
@@ -592,7 +599,6 @@ table.tableSection tr {
     display: none !important;
   }
 }
-
 
 @media only screen and (max-width: 991px) {
   .dropdown-top {
@@ -623,7 +629,6 @@ table.tableSection tr {
     display: none !important;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   .heading_hotdeal:before {
@@ -656,8 +661,10 @@ table.tableSection tr {
   .carousel-indicators {
     margin-bottom: 0 !important;
   }
-  
-  .slider-item-main-item, .slider-item-sub-item-1, .slider-item-sub-item-2{
+
+  .slider-item-main-item,
+  .slider-item-sub-item-1,
+  .slider-item-sub-item-2 {
     height: auto !important;
   }
 
@@ -683,7 +690,7 @@ table.tableSection tr {
 
 .banner-slide {
   position: relative;
-  display:table;
+  display: table;
 }
 
 .header-right {
@@ -762,7 +769,6 @@ table.tableSection tr {
 .icon_cart {
   color: #fff;
   background-color: #8acf4f;
-  ;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -802,7 +808,7 @@ table.tableSection tr {
   text-align: right !important;
 }
 
-.d-list>div:first-child {
+.d-list > div:first-child {
   margin: 0;
 }
 
@@ -871,7 +877,6 @@ ol {
   margin-bottom: 20px;
 }
 
-
 .card-img-top {
   border: 1px solid gray;
 }
@@ -886,7 +891,6 @@ ol {
   border-color: var(--mdb-list-group-active-border-color);
 }
 
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -898,7 +902,7 @@ ol {
 }
 
 .drop-button::after {
-  content: '';
+  content: "";
 }
 
 .drop-sidebar {
@@ -944,7 +948,6 @@ ol {
 aside {
   margin-top: 10%;
   height: 50%;
-
 }
 
 #menu ul {
@@ -976,12 +979,11 @@ aside {
   padding: 10px;
 }
 
-.cl-menu>li:hover {
+.cl-menu > li:hover {
   opacity: 1;
   filter: alpha(opacity=100);
   background-color: #6599cd;
 }
-
 
 .cl-menu li .slide-drop-right {
   display: flex;
@@ -1004,9 +1006,8 @@ aside {
   z-index: 10;
 }
 
-.cl-menu li:hover>ul {
+.cl-menu li:hover > ul {
   display: block;
-
 }
 
 .cl-menu li ul li:last-child {
@@ -1066,12 +1067,10 @@ aside {
   background-color: #f5f5f5;
   box-shadow: 0 0px 10px;
   color: black;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   border: 2px dotted #fff;
   outline: 5px solid #6599cd;
-
-
 }
 
 .ribbon::before {
@@ -1081,11 +1080,10 @@ aside {
   border-right-color: transparent;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   display: block;
   border: 5px solid #f19066;
   box-sizing: content-box;
-
 }
 
 .ribbon::after {
@@ -1095,7 +1093,7 @@ aside {
   border-right-color: transparent;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   display: block;
   border: 5px solid #f19066;
 }
@@ -1108,14 +1106,13 @@ aside {
   font-size: 14px;
 }
 
-.table-recipe>:not(caption)>*>* {
+.table-recipe > :not(caption) > * > * {
   padding: 10px 0 10px 10px;
 }
 
 #header-table {
   width: calc(15% - 16px);
 }
-
 
 .input-products .input-group-text {
   padding: 5px !important;
