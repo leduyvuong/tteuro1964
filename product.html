@@ -66,7 +66,8 @@
           <!-- Left elements -->
           <div class="col-lg-3 col-sm-4 col-4">
             <a href="index.html" target="_blank" class="float-start">
-              <img src="img/logo.png" height="55" />
+              <img src="img/logo.png" height="75" />
+                   
             </a>
           </div>
           <!-- Left elements -->
@@ -669,29 +670,11 @@
               <div class="row mb-3 offer_container">
                 <b>Ưu đãi</b>
                 <div style="display: flex;">
-                  <img src="/img/2.svg" style="width: 30px; margin-right: 8px;" alt="">
+                  <img src="img/2.svg" style="width: 30px; margin-right: 8px;" alt="">
                   <span>Tặng ngay 100 KiotPoint cho khách hàng mới! Nhập hàng ngay hưởng ưu đãi liền tay</span>
                 </div>
               </div>
 
-              <div class="mb-3" style="display: flex;">
-                <span class="text-muted" style="margin-right: 16px;">Vận chuyển</span>
-                <div>
-                  <div>
-                    <img src="/img/2.svg" style="width: 20px;" alt="">
-                    <span>Khu vực nhận hàng</span>
-                    <select name="" id="">
-                      <option value="0">Hà Nội</option>
-                    </select>
-                  </div>
-                  <div>
-                    <img src="/img/2.svg" style="width: 20px;" alt="">
-                    <span>KiotViet Connect vận chuyển</span>
-                    <img src="/img/alert-circle-svgrepo-com.svg" style="width: 20px;" alt="">
-                  </div>
-                </div>
-              </div>
-  
               <div class="row mb-4">
                 <!-- col.// -->
                 <div class="mb-3" style="display: flex; align-items: center;">
@@ -719,12 +702,10 @@
           </main>
         </div>
         <div class="row product-card col-md-3 col-sm-12 hover-shadow shadow-4-strong recipes" style="margin-left: 30px; padding: 0;">
-            <h2 style="text-align: center; background-color: #6599cd; height: 50px; padding-top: 5px; border-radius: 15px;">Kapcsolatfelvétel</h2>
+            <h2 style="color: white; text-align: center; background-color: #6599cd; height: 50px; padding-top: 5px; border-radius: 15px;">Kapcsolatfelvétel</h2>
           <div class="col-12 recipe">
-            <span>Name: Le Duy Vuong</span></br>
-            <span>Address: Da Nang</span>
             <div class="table-responsive">
-              <table class="tableSection table table-bordered table-recipe">
+              <table class="tableSection table table-recipe" id="table-hoadon">
                 <thead class="checkout_head">
                   <tr class="active">
                     <th id="header-table"><span class="text"></span>
@@ -804,31 +785,85 @@
                       /></td>
                     <td >GoPro action camera 4K</td>
                     <td>3</td>
+                    <td class="price" data-price="9">2</td>
+                  </tr>
+                  <tr>
+                    <td><img
+                      src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/12.webp"
+                      alt=""
+                      style="width: 35px; height: 35px"
+                      class="rounded-circle"
+                      /></td>
+                    <td >GoPro action camera 4K</td>
+                    <td>3</td>
+                    <td class="price" data-price="9">2</td>
+                  </tr>
+                  <tr>
+                    <td><img
+                      src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/12.webp"
+                      alt=""
+                      style="width: 35px; height: 35px"
+                      class="rounded-circle"
+                      /></td>
+                    <td >GoPro action camera 4K</td>
+                    <td>3</td>
+                    <td class="price" data-price="9">2</td>
+                  </tr>
+                  <tr>
+                    <td><img
+                      src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/12.webp"
+                      alt=""
+                      style="width: 35px; height: 35px"
+                      class="rounded-circle"
+                      /></td>
+                    <td >GoPro action camera 4K</td>
+                    <td>3</td>
+                    <td class="price" data-price="9">2</td>
+                  </tr>
+                  <tr>
+                    <td><img
+                      src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/12.webp"
+                      alt=""
+                      style="width: 35px; height: 35px"
+                      class="rounded-circle"
+                      /></td>
+                    <td >GoPro action camera 4K</td>
+                    <td>3</td>
                     <td class="price" data-price="9">9</td>
+                  </tr>
+                  <tr style="display: table;">
+                    <td colspan="3" style="text-align: center;">
+                      <button id="load_more" type="button" class="btn btn-primary btn-sm btn-floating">
+                        <i id="load_more_icon" class="fas fa-plus"></i>
+                      </button>
+
+                      <button id="minus" type="button" class="btn btn-primary btn-sm btn-floating hidden">
+                        <i id="load_more_icon" class="fas fa-minus"></i>
+                      </button>
+                    </td>
                   </tr>
                 </tbody>
                 <tfoot class="checkout_head">
-                  <tr class="active">
+                  <tr style="display: table;">
                     <td colspan="3" style="text-align: center;">Sum</td>
                     <td id="total_amount"></td>
                   </tr>
-                  <tr class="active">
+                  <tr style="display: table;">
                     <td colspan="3" style="text-align: center;">VAT</td>
                     <td id="vat">3</td>
                   </tr>
-                  <tr class="active">
+                  <tr style="display: table;">
                     <td colspan="3" style="text-align: center;">Total</td>
                     <td id="total"></td>
                   </tr>
                 </tfoot>
               </table>
-              <a href="#" class="load_more" id="load_more">Load more</a>
             </div>
           </div>
           
           
-          <div class="col-12" >
-            <a href="#" style="float: right;" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Buy now </a>
+          <div class="col-12 text-center mb-4" >
+            <a href="#" style="width: 70%;" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Buy now </a>
           </div>
           
         </div>
