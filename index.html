@@ -21,29 +21,6 @@
 <body>
   <!--Main Navigation-->
   <div id="fb-root"></div>
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "254222261372944");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v16.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0"
     nonce="rUUep1hw"></script>
   <header>
@@ -68,7 +45,7 @@
                 <li class="login_content">
                   <a href="" class="hidden-lg click_account"><i class="fa fa-user" aria-hidden="true"></i>
                     Fiók</a>
-                  <ul class="ul_account">
+                  <ul class="ul_account text-center">
                     <li><a href="Bejelentkezes" class="text2"><i class="fa fa-user" aria-hidden="true"></i>
                         Bejelentkezés</a></li>
                     <li><a href="Regisztracio" class="text2"><i class="fa fa-lock" aria-hidden="true"></i>
@@ -3117,7 +3094,29 @@
       width: 7.33% !important;
     }
   </style>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "254222261372944");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
 
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v16.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <!-- Messenger Plugin chat Code -->
 
 
