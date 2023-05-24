@@ -644,28 +644,71 @@
               </h4>
   
               <div class="mb-3">
-                <span class="h5">$75.00</span>
-                <span class="text-muted">/per box</span>
+                <span class="text-muted">Gói</span>
               </div>
+
+              <table>
+                <colgroup>
+                  <col span="1" style="width: 50%;">
+                  <col span="1" style="width: 50%;">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>Chưa có đánh giá</td>
+                    <td>Giá chưa bao gồm <b>VAT</b></td>
+                  </tr>
+                  <tr>
+                    <td><span class="h5">$75.00</span> <br/> <span class="text-muted">12 - 23 Gói</span></td>
+                    <td><span class="h5">$75.00</span><br/><span class="text-muted">24 Gói trở lên</span></td>
+                  </tr>
+                </tbody>
+              </table>
   
               <hr />
+
+              <div class="row mb-3 offer_container">
+                <b>Ưu đãi</b>
+                <div style="display: flex;">
+                  <img src="/img/2.svg" style="width: 30px; margin-right: 8px;" alt="">
+                  <span>Tặng ngay 100 KiotPoint cho khách hàng mới! Nhập hàng ngay hưởng ưu đãi liền tay</span>
+                </div>
+              </div>
+
+              <div class="mb-3" style="display: flex;">
+                <span class="text-muted" style="margin-right: 16px;">Vận chuyển</span>
+                <div>
+                  <div>
+                    <img src="/img/2.svg" style="width: 20px;" alt="">
+                    <span>Khu vực nhận hàng</span>
+                    <select name="" id="">
+                      <option value="0">Hà Nội</option>
+                    </select>
+                  </div>
+                  <div>
+                    <img src="/img/2.svg" style="width: 20px;" alt="">
+                    <span>KiotViet Connect vận chuyển</span>
+                    <img src="/img/alert-circle-svgrepo-com.svg" style="width: 20px;" alt="">
+                  </div>
+                </div>
+              </div>
   
               <div class="row mb-4">
                 <!-- col.// -->
-                <div class="col-md-4 col-6 mb-3">
-                  <label class="mb-2 d-block">Quantity</label>
-                  <div class="input-group mb-3" style="width: 170px;">
-                    <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon1"
+                <div class="mb-3" style="display: flex; align-items: center;">
+                  <label class="mb-2 d-block" style="margin-right: 40px;">Số lượng</label>
+                  <div class="input-group mb-3" style="width: 160px;">
+                    <button class="btn btn-white border border-secondary px-3" style="border-radius: 45% 0 0 45%;" type="button" id="button-addon1"
                       data-mdb-ripple-color="dark">
                       <i class="fas fa-minus"></i>
                     </button>
                     <input type="text" class="form-control text-center border border-secondary" placeholder="14"
                       aria-label="Example text with button addon" aria-describedby="button-addon1" />
-                    <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon2"
+                    <button class="btn btn-white border border-secondary px-3" style="border-radius: 0 45% 45% 0;" type="button" id="button-addon2"
                       data-mdb-ripple-color="dark">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
+                  <span class="mb-2" style="margin-left: 20px;">55,000</span>
                 </div>
               </div>
               <a href="#" class="btn btn-warning shadow-0"> Buy now </a>
@@ -677,13 +720,13 @@
         </div>
         <div class="row product-card col-md-3 col-sm-12 hover-shadow shadow-4-strong recipes" style="margin-left: 30px; padding: 0;">
             <h2 style="text-align: center; background-color: #6599cd; height: 50px; padding-top: 5px; border-radius: 15px;">Kapcsolatfelvétel</h2>
-          <div class="col-12 recipe" style="margin-top: -75px;">
+          <div class="col-12 recipe">
             <span>Name: Le Duy Vuong</span></br>
             <span>Address: Da Nang</span>
             <div class="table-responsive">
               <table class="tableSection table table-bordered table-recipe">
-                <thead>
-                  <tr>
+                <thead class="checkout_head">
+                  <tr class="active">
                     <th id="header-table"><span class="text"></span>
                     <th><span class="text">Name</span>
               
@@ -706,7 +749,7 @@
                       /></td>
                     <td >GoPro action camera 4K</td>
                     <td>3</td>
-                    <td>9</td>
+                    <td class="price" data-price="9">9</td>
                   </tr>
                   <tr>
                     <td><img
@@ -717,7 +760,7 @@
                       /></td>
                     <td >GoPro action camera 4K</td>
                     <td>3</td>
-                    <td>9</td>
+                    <td class="price" data-price="9">9</td>
                   </tr>
                   <tr>
                     <td><img
@@ -728,7 +771,7 @@
                       /></td>
                     <td >GoPro action camera 4K</td>
                     <td>3</td>
-                    <td>9</td>
+                    <td class="price" data-price="9">9</td>
                   </tr>
                   <tr>
                     <td><img
@@ -739,7 +782,7 @@
                       /></td>
                     <td >GoPro action camera 4K</td>
                     <td>3</td>
-                    <td>9</td>
+                    <td class="price" data-price="9">9</td>
                   </tr>
                   <tr>
                     <td><img
@@ -750,7 +793,7 @@
                       /></td>
                     <td >GoPro action camera 4K</td>
                     <td>3</td>
-                    <td>9</td>
+                    <td class="price" data-price="9">9</td>
                   </tr>
                   <tr>
                     <td><img
@@ -761,16 +804,25 @@
                       /></td>
                     <td >GoPro action camera 4K</td>
                     <td>3</td>
-                    <td>9</td>
+                    <td class="price" data-price="9">9</td>
                   </tr>
                 </tbody>
-                <tfoot>
-                  <tr>
+                <tfoot class="checkout_head">
+                  <tr class="active">
                     <td colspan="3" style="text-align: center;">Sum</td>
-                    <td>1000000</td>
+                    <td id="total_amount"></td>
+                  </tr>
+                  <tr class="active">
+                    <td colspan="3" style="text-align: center;">VAT</td>
+                    <td id="vat">3</td>
+                  </tr>
+                  <tr class="active">
+                    <td colspan="3" style="text-align: center;">Total</td>
+                    <td id="total"></td>
                   </tr>
                 </tfoot>
               </table>
+              <a href="#" class="load_more" id="load_more">Load more</a>
             </div>
           </div>
           
