@@ -1121,7 +1121,7 @@ aside {
 .button_show-name {
   background-color: #6599cd;
   margin-bottom: 10px;
-  height: 40px;
+  height: 35px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1136,7 +1136,7 @@ aside {
 
 .button_register {
   background-color: #cbc9c9;
-  height: 40px;
+  height: 35px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1160,4 +1160,8 @@ aside {
   width: 0;
   position: absolute;
   pointer-events: none;
+}
+
+.drop-tabs {
+  display: none;
 }
