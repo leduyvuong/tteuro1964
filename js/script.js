@@ -35,47 +35,6 @@ for (let i = 0; i < toggles.length; i++) {
 // function hoverOut() {
 //     document.getElementById('sidebar-hidden').hidden = true
 // }
-var lastActive = 5;
-var max = document.getElementsByClassName("tableSection")[0].rows.length;
-
-function load_more() {
-  for (let i = 1; i < lastActive; i++) {
-    document
-      .getElementsByClassName("tableSection")[0]
-      .rows[i].classList.add("active");
-  }
-}
-
-load_more();
-
-document.getElementById("load_more").addEventListener("click", function (e) {
-  e.preventDefault();
-  lastActive = lastActive + 10;
-  if (lastActive >= max) {
-    this.classList.add("hidden");
-    document.getElementById('minus').classList.remove('hidden')
-  }
-  load_more();
-});
-
-document.getElementById("minus").addEventListener("click", function (e) {
-  var rows = document.getElementById('table-hoadon').rows.length
-  if (rows > 10) {
-    rows = 10
-  }
-
-  for (let i = rows; i > 4; i--) {
-    document
-      .getElementById("table-hoadon")
-      .rows[i].classList.remove("active");
-    document
-      .getElementById("table-hoadon")
-      .rows[i].classList.add("hidden");
-
-    document.getElementById('minus').classList.add('hidden')
-    document.getElementById('load_more').classList.remove('hidden')
-  }
-});
 
 document.getElementById("btn-back").addEventListener("click", function () {
   scroll(0, 0);
