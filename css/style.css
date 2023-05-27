@@ -868,9 +868,108 @@ ol {
   display: none;
 }
 
+
+.mini-cart-center .heading-cart ul {
+  position: absolute;
+  top: 105px;
+  width: 400px;
+  border: 1px solid #efefef;
+  background: #fff;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.18);
+  z-index: 999;
+  border-radius: 10px;
+  display: none;
+  text-align: left;
+}
+
+.mini-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  border: 1px solid #efefef;
+  background: #fff;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.18);
+  z-index: 999;
+  border-radius: 10px;
+  display: none;
+  margin-right: 20px;
+}
+
+.mini-bar li {
+  width: 100% !important;
+  text-align: center;
+}
+
+.mini-bar:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mini-cart-center .heading-cart ul li {
+  width: 100% !important;
+  text-align: center;
+}
+
+.mini-cart .row:hover {
+  background-color: #f8f8f8;
+}
+
+.mini-cart {
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.mini-cart .row img {
+  width: 4.5rem;
+  height: 4rem;
+  padding: 10px !important;
+}
+
+.mini-cart .row span {
+  width: auto !important;
+}
+
+.top-cart-contain .heading-cart:hover>ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -60px;
+}
+
 .displayFlex {
   display: flex;
 }
+
+
+.displayFlex li .ul_account {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 10;
+}
+
+.displayFlex li:hover>.ul_account {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.show-mini-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 
 .banner-left {
   height: 500px;
@@ -1013,19 +1112,6 @@ aside {
 
 .cl-menu li ul li:last-child {
   border-bottom: none;
-}
-
-.displayFlex li .ul_account {
-  position: absolute;
-  top: 0;
-  display: none;
-  z-index: 10;
-}
-
-.displayFlex li:hover>.ul_account {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .btn-product {
